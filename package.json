@@ -1,0 +1,43 @@
+{
+  "name": "pi-stash-ctrl-s",
+  "version": "0.1.0",
+  "description": "Pi extension that stashes the current editor draft with Ctrl+S",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanidler/pi-stash-ctrl-s.git"
+  },
+  "homepage": "https://github.com/johanidler/pi-stash-ctrl-s#readme",
+  "bugs": {
+    "url": "https://github.com/johanidler/pi-stash-ctrl-s/issues"
+  },
+  "files": [
+    "src/stash.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.3",
+    "@mariozechner/pi-coding-agent": "0.60.0",
+    "@types/node": "22.19.15",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "pi": {
+    "extensions": [
+      "./src/stash.ts"
+    ]
+  }
+}
