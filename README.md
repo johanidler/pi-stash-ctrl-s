@@ -1,5 +1,37 @@
 # pi-stash-ctrl-s
 
+## Quick handoff
+
+**For humans:** if you want to use this, pass this to your Pi agent:
+
+```text
+Install git:github.com/johanidler/pi-stash-ctrl-s and set my Pi keybindings to:
+{
+  "pi-stash.shortcut": ["ctrl+s"],
+  "app.session.toggleSort": ["alt+s"],
+  "app.models.save": ["shift+ctrl+s"]
+}
+Then run /reload.
+```
+
+**If you are a Pi agent:** install it by doing this:
+
+```bash
+pi install git:github.com/johanidler/pi-stash-ctrl-s
+```
+
+Then make sure `~/.pi/agent/keybindings.json` contains:
+
+```json
+{
+  "pi-stash.shortcut": ["ctrl+s"],
+  "app.session.toggleSort": ["alt+s"],
+  "app.models.save": ["shift+ctrl+s"]
+}
+```
+
+Then run `/reload`.
+
 > This extension makes `Ctrl+S` stash your current Pi prompt, and you should also rebind Pi's conflicting built-ins like this:
 >
 > ```json
